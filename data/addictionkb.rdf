@@ -1,0 +1,1462 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb/"
+     xml:base="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb">
+        <rdfs:comment>A ontology for HIV, Substance Use Disorder and Other Psychiatric Disorders</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#altersBiologicalState -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#altersBiologicalState">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#HumanConcept"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#anatomyDownRegulatesGene -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#anatomyDownRegulatesGene">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#structuralEntityObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#anatomyExpressesGene -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#anatomyExpressesGene">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#structuralEntityObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#anatomyUpregulatesGene -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#anatomyUpregulatesGene">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#structuralEntityObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#associatedWithDisease -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#associatedWithDisease">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#drugEntityObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#bodyPartExpressesGene -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#bodyPartExpressesGene">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#bodyPartObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#BodyPart"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Gene"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#bodyPartObjectProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#bodyPartObjectProperty">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#BodyPart"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#bodyPartOverExpressesGene -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#bodyPartOverExpressesGene">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#bodyPartObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#BodyPart"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Gene"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#bodyPartUnderExpressesGene -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#bodyPartUnderExpressesGene">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#bodyPartObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#BodyPart"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Gene"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#chemicalAssociatesWithDisease -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#chemicalAssociatesWithDisease">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#chemicalObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#chemicalBindsGene -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#chemicalBindsGene">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#chemicalObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Drug"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Gene"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#chemicalObjectProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#chemicalObjectProperty">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#containsCellType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#containsCellType">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#structuralEntityObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#containsOrgan -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#containsOrgan">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#structuralEntityObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#describedInPublications -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#describedInPublications">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#researchEntityObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#diseaseAssociatesWithDisease -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#diseaseAssociatesWithDisease">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#diseaseObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Disease"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Disease"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#diseaseDownregulatesGene -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#diseaseDownregulatesGene">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#diseaseObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Disease"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Gene"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#diseaseLocalizesToAnatomy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#diseaseLocalizesToAnatomy">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#diseaseObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Disease"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#BodyPart"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#diseaseManifestedAsPhenotype -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#diseaseManifestedAsPhenotype">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#diseaseObjectProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#phenotypeManifestationOfDisease"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Disease"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#ChemicalEffect"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#ClinicalPhenotype"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#diseaseObjectProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#diseaseObjectProperty"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#diseaseRegulatesGeneOther -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#diseaseRegulatesGeneOther">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#diseaseObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Disease"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Gene"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#diseaseUpregulatesGene -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#diseaseUpregulatesGene">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#diseaseObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Disease"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Gene"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#drugCausesEffect -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#drugCausesEffect">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Drug"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#ChemicalEffect"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#drugEntityObjectProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#drugEntityObjectProperty">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Drug"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#drugInClass -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#drugInClass">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Drug"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Cannabinoids"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Depressants"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Dissociatives"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Empathogens"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Hallucinogens"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Opioids"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Stimulants"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#drugTreatsDisease -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#drugTreatsDisease">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#chemicalAssociatesWithDisease"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Drug"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Disease"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#expressedInCellType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#expressedInCellType">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#structuralEntityObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#expressesProtein -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#expressesProtein">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#structuralEntityObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#geneAssociatedWithCellularComponent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#geneAssociatedWithCellularComponent">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#geneOntologyObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#geneAssociatesWithDisease -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#geneAssociatesWithDisease">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#geneObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#geneHasMolecularFunction -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#geneHasMolecularFunction">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#geneOntologyObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#geneInPathway -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#geneInPathway">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#geneObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#geneInteractsWithGene -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#geneInteractsWithGene">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#geneObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#geneObjectProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#geneObjectProperty"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#geneOntologyObjectProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#geneOntologyObjectProperty"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#geneParticipatesInBiologicalProcess -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#geneParticipatesInBiologicalProcess">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#geneOntologyObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#geneRegulatesGene -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#geneRegulatesGene">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#geneObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Gene"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Gene"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#hasAssociatedStudies -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#hasAssociatedStudies">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#researchEntityObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#hasEtiology -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#hasEtiology">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#diseaseObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Disease"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#ExposureEvent"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Mutation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#RiskFactor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#hasProteinProduct -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#hasProteinProduct">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#geneObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#pathwayContainsGene -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#pathwayContainsGene">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Pathway"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Gene"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#pathwayRegulatesGene -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#pathwayRegulatesGene">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#GeneticPathway"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Gene"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#phenotypeManifestationOfDisease -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#phenotypeManifestationOfDisease">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#ClinicalPhenotype"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Disease"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#researchEntityObjectProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#researchEntityObjectProperty"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#riskGovernedByExposure -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#riskGovernedByExposure">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#EnvironmentalRiskFactor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#ExposureEvent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#riskGovernedByGene -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#riskGovernedByGene">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#GeneticRiskFactor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Gene"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#structuralEntityObjectProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#structuralEntityObjectProperty"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#symptomManifestationOfDisease -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#symptomManifestationOfDisease">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Symptom"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Disease"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#transcriptionFactorInteractsWithGene -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#transcriptionFactorInteractsWithGene">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#aopDataProperty -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#aopDataProperty"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#aopName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#aopName">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#aopDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#assayDataProperty -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#assayDataProperty"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#assayTarget -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#assayTarget">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#assayDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#cellLine -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#cellLine">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#assayDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#cellType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#cellType">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#assayDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#commonName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#commonName">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>A string used to name the entity. This provides a more useful way to label nodes without the prefixes needed to prevent conflicts when nodes inn different classes have the same common name. This common name should also be safe to use with punctuation and whitespace characters (which should be removed from node names).</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#dbXref -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#dbXref"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#diseaseComplexity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#diseaseComplexity">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#GeneticDisease"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#geneDataProperty -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#geneDataProperty"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#geneSymbol -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#geneSymbol">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#geneDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#geneSynonyms -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#geneSynonyms">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#geneDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#keyEventAction -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#keyEventAction">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#aopDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#keyEventName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#keyEventName">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#aopDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#keyEventType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#keyEventType">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#aopDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#listAcronym -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#listAcronym">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#listDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#List"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#listDataProperty -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#listDataProperty"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#listDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#listDescription">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#listDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#List"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#listUrl -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#listUrl">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#listDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#List"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#objectName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#objectName">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#aopDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#objectSource -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#objectSource">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#aopDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#pathwayId -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#pathwayId">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Pathway"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#processName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#processName">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#aopDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#processSource -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#processSource">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#aopDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#sourceDatabase -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#sourceDatabase">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#synonym -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#synonym">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#targetCategory -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#targetCategory">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#assayDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#typeOfGene -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#typeOfGene">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#geneDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Gene"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#xrefAOPWiki -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#xrefAOPWiki">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#aopDataProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#dbXref"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#xrefAOPWikiAOPID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#xrefAOPWikiAOPID">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#xrefAOPWiki"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#xrefAOPWikiKEID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#xrefAOPWikiKEID">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#xrefAOPWiki"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#xrefAOPWikiKERID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#xrefAOPWikiKERID">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#xrefAOPWiki"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#xrefAOPWikiStressorID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#xrefAOPWikiStressorID">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#xrefAOPWiki"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#xrefCL -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#xrefCL">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#dbXref"/>
+        <rdfs:comment>Term from the Cell Ontology (CL)</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#xrefCasRN -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#xrefCasRN">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#aopDataProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#dbXref"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#xrefDTXSID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#xrefDTXSID">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#dbXref"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#xrefDiseaseOntology -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#xrefDiseaseOntology">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#dbXref"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Disease"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Note: Due to inconsistencies in granularity, some diseases may have multiple DOIDs.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#xrefDrugbank -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#xrefDrugbank">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#dbXref"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#xrefEnsembl -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#xrefEnsembl">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#dbXref"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Gene"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#xrefFMA -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#xrefFMA">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#dbXref"/>
+        <rdfs:comment>Term from the Foundational Model of Anatomy (FMA)</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#xrefGeneOntology -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#xrefGeneOntology">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#dbXref"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#xrefHGNC -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#xrefHGNC">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#dbXref"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Gene"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#xrefMeSH -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#xrefMeSH">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#dbXref"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Any medical subject heading (does not include supplemental terms, such as the UIs that point to specific compunds).</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#xrefMeSHParents -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#xrefMeSHParents">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#dbXref"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#xrefNcbiGene -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#xrefNcbiGene">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#dbXref"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Gene"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#xrefNciThesaurus -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#xrefNciThesaurus">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#dbXref"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#xrefOMIM -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#xrefOMIM">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#dbXref"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Disease"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#xrefUberon -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#xrefUberon">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#dbXref"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#BodyPart"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#xrefUmlsCUI -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#xrefUmlsCUI">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#dbXref"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#xrefUnknownPathway -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#xrefUnknownPathway">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#dbXref"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Pathway"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Pathway ID from an unknown (or deprecated) pathway database.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#AdverseEffect -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#AdverseEffect">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#ChemicalEffect"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#BiologicalProcess -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#BiologicalProcess">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#HumanConcept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#BodyPart -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#BodyPart">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#HumanConcept"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Disease"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#ExposureEvent"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#GeneticEntity"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Human"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Cannabinoids -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Cannabinoids">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Drug"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#CellType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#CellType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#BodyPart"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#CellularComponent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#CellularComponent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#BodyPart"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Chemical -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Chemical">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#ChemicalConcept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#ChemicalConcept -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#ChemicalConcept"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#ChemicalEffect -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#ChemicalEffect">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#MedicalCondition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#ClinicalPhenotype -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#ClinicalPhenotype">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#MedicalCondition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#CopyNumberVariant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#CopyNumberVariant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Variant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Database -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Database">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#ResearchEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Depressants -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Depressants">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Drug"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Disease -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Disease">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#MedicalCondition"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#ExposureEvent"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#GeneticEntity"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Pathway"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#RiskFactor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Dissociatives -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Dissociatives">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Drug"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Drug -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Drug">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#ChemicalConcept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#DrugClass -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#DrugClass">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#ChemicalConcept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Empathogens -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Empathogens">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Drug"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#EnvironmentalRiskFactor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#EnvironmentalRiskFactor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#RiskFactor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#ExposureEvent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#ExposureEvent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#HumanConcept"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#GeneticEntity"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Human"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Pathway"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#RiskFactor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Finding -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Finding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#ResearchEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#GainOfFunctionMutation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#GainOfFunctionMutation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Mutation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Gene -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Gene">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#GeneticEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#GeneticDisease -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#GeneticDisease">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#GeneticEntity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#GeneticEntity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#HumanConcept"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Human"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Pathway"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#RiskFactor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#GeneticPathway -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#GeneticPathway">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Pathway"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#GeneticRiskFactor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#GeneticRiskFactor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#RiskFactor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Hallucinogens -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Hallucinogens">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Drug"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Human -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Human">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Species"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Pathway"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#RiskFactor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#HumanConcept -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#HumanConcept"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#HumanMolecule -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#HumanMolecule">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#BodyPart"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#HumanNucleicAcid -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#HumanNucleicAcid">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#HumanMolecule"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#HumanProtein -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#HumanProtein">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#HumanMolecule"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#HumanSmallMolecule -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#HumanSmallMolecule">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#HumanMolecule"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#List -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#List">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#ResearchEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#LossOfFunctionMutation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#LossOfFunctionMutation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Mutation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#MedicalCondition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#MedicalCondition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#HumanConcept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#MetabolicPathway -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#MetabolicPathway">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Pathway"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#MolecularFunction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#MolecularFunction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#HumanConcept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Mutation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Mutation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#GeneticEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#NonHumanSpecies -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#NonHumanSpecies">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Species"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Opioids -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Opioids">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Drug"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Organ -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Organ">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#BodyPart"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#OrganSystem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#OrganSystem">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#BodyPart"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Pathway -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Pathway">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#HumanConcept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#PharmaceuticalDrug -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#PharmaceuticalDrug">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Drug"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Publication -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Publication">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#ResearchEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#ResearchEntity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#ResearchEntity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#RiskFactor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#RiskFactor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#HumanConcept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#SignalTransductionPathway -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#SignalTransductionPathway">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Pathway"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#SingleNucleotidePolymorphism -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#SingleNucleotidePolymorphism">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Variant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Species -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Species"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Stimulants -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Stimulants">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Drug"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Study -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Study">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#ResearchEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Symptom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Symptom">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#MedicalCondition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#TherapeuticEffect -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#TherapeuticEffect">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#ChemicalEffect"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#TissueType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#TissueType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#BodyPart"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#TranscriptionFactor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#TranscriptionFactor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#HumanConcept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Variant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Variant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#GeneticEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#BodyPart"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#Pathway"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#RiskFactor"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#xrefAOPWikiAOPID"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#xrefAOPWikiKEID"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#xrefAOPWikiKERID"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ghosha/ontologies/2023/8/addictionkb#xrefAOPWikiStressorID"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+

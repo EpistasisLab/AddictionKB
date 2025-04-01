@@ -24,7 +24,7 @@ To build a copy of AddictionKB graph database, you can either:
 
 ### Build from scratch (less easy)
 
-**For detailed instructions on building AddictionKB from scratch, see the [Alzheimer's Disease Knowledge Base (AlzKB)](https://github.com/EpistasisLab/AlzKB) [here](https://github.com/EpistasisLab/AlzKB/blob/master/BUILD.org)**
+**For detailed instructions on building AddictionKB from scratch, see the [Alzheimer's Disease Knowledge Base](https://github.com/EpistasisLab/AlzKB) (AlzKB) [here](https://github.com/EpistasisLab/AlzKB/blob/master/BUILD.org)**
 
 Start by installing the Python package, which includes the necessary scripts:
 
